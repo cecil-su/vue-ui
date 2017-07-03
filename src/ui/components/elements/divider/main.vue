@@ -4,6 +4,6 @@
 
 <script>
   export default {
-    name: 's-divider'
+    name: 'u-divider'
   }
 </script>

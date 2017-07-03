@@ -4,6 +4,6 @@
 
 <script>
   export default {
-    name: 's-header'
+    name: 'u-header'
   }
 </script>
