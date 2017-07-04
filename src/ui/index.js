@@ -7,6 +7,7 @@ import Divider from './components/elements/divider/index.js'
 // Modules
 import Dimmer from './components/modules/dimmer/index.js'
 import Progress from './components/modules/progress/index.js'
+import Anime from './components/modules/anime/index.js'
 
 const components = [
   Button,
@@ -22,6 +23,7 @@ const install = function (Vue, options) {
     Vue.component(component.name, component)
   })
 
+  Vue.use(Anime.directive)
   Vue.use(Progress.directive)
   Vue.use(Dimmer.directive)
   Vue.prototype.$dimmer = Dimmer.dimmer

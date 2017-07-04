@@ -1,9 +1,17 @@
 <template>
-  <div>button</div>
+  <div class="button">button</div>
 </template>
 
 <script>
   export default {
-    name: 'u-button'
+    name: 'u-button',
+    data () {
+      return {
+        type: ''
+      }
+    },
+    mounted () {
+      console.log(this.type)
+    }
   }
 </script>
