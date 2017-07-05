@@ -14,6 +14,7 @@
       <div class="box-green"></div>
       <div class="box-green"></div>
     </div>
+    <input v-anime="handleText" :value="percent">
   </div>
 </template>
 
@@ -40,6 +41,12 @@
     },
     methods: {
       iconHandle (e) {
+      },
+      handleText (el) {
+        el.options({
+          value: 100,
+          easing: 'linear'
+        })
       },
       handle (el) {
         el.options({
